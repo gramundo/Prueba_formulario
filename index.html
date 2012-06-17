@@ -25,19 +25,11 @@
 	<body>
  		<div id="title_bar"><strong>Mi Formulario</strong> por Gonzalo</div>
 
-		<div id="welcome" class="view">
-		  <div class="app_button" id="map_button">Show My Location</div>
-  	      <div class="app_button" id="settings_button">Settings</div>
-		</div>
-
-		<div id="map" class="view">
-		  <div class="map_image">
-              <img id="static_map" src="assets/img/staticmap.png">
-		  </div>
-		  <p>This is where you are</p>
-		  <div class="app_button" id="welcome_button">Go Back</div>
-		</div>
-
+		<form id="form1" name="form1" method="post" action="consultar.php">
+			Usuario: <input type="text" name="nombre" id="nombre" required/>
+			Password: <input type="password" name="password" id="password" required/>
+			<input type="submit" name="enviar" id="enviar" value="Enviar">
+		</form>
 		
 	</body>
 </html>
